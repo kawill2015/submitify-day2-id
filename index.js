@@ -24,18 +24,18 @@ var storage = new Storage();
 
 // Create two test projects, so we have some data on the frontend.
 // Todo: remove this for production!
-storage.addProject(
-	new Project("Test", "Testing a project", "Me")
-);
+// storage.addProject(
+// 	new Project("Test", "Testing a project", "Me")
+// );
 
-storage.addProject(
-	new Project("Test 2", "Testing another project", "You")
-);
+// storage.addProject(
+// 	new Project("Test 2", "Testing another project", "You")
+// );
 
 // Create a fake test user for testing :)
-storage.addUser(
-	new User("erty", "hunter2")
-);
+// storage.addUser(
+// 	new User("erty", "hunter2")
+// );
 
 // give us req.body for post requests
 var bodyParser = require("body-parser");
@@ -67,9 +67,9 @@ app.get("/login", (req, res) => {
 	res.sendFile(__dirname + "/public/login.html");
 });
 
-app.get("/signup", (req, res) => {
-	res.sendFile(__dirname + "/public/signup.html");
-});
+// app.get("/signup", (req, res) => {
+// 	res.sendFile(__dirname + "/public/signup.html");
+// });
 
 // sets up a handler to respond to a GET request for /api/projects
 // responds with, as JSON, all of the projects currently in storage.
